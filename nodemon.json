@@ -1,0 +1,12 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "node_modules/**/node_modules",
+    "src"
+  ],
+  "delay": "2500",
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": 3000
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title><%=title%></title>
+    <meta name="generator" content="Bootply" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Links to our css, from /src/public and /node_modules (paths set in srcServer.js) -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/all.css" rel="stylesheet">
+    <link href="/css/styles.scss" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Header contains our navigation and search bar -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/">teamTALIMA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="nav navbar-nav mr-auto">
+            <%for(let i=0; i<nav.length; i++) {%>
+              <li class="nav-item">
+                <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a>
+              </li>
+            <%}%>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <div id="masthead">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1><%=title%></h1>
+          </div>
+        </div>
+      </div><!-- /cont -->
+
+      <div class="container spacer">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="top-spacer"> </div>
+          </div>
+        </div>
+      </div><!-- /cont -->
+    </div>
+
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel">
+            <div class="panel-body">
+
+              <!-- MAIN : SINGLE BOOK -->
+              <div class="row">
+                <br>
+                <div class="col-md-2 col-sm-3 text-center">
+                  <a class="story-title" href="#"><img alt="" src="<%=book.details.image_url%>" style="width:100px;height:100px"></a>
+                </div>
+                <div class="col-md-10 col-sm-9">
+                  <h3>
+                    <%=book.title%>
+                  </h3>
+                  <div class="row">
+                    <div class="col-xs-9">
+                      <h4><span class="label label-default">
+                          <%=book.author%></span></h4>
+                    </div>
+                    <div class="col-xs-3"></div>
+                  </div>
+                  <br>
+                  <%-book.details.description%><br>
+                </div>
+              </div>
+
+              <a href="/" class="btn btn-primary float-right">More <i class="fas fa-chevron-right"></i></a>
+
+            </div>
+          </div>
+        </div><!--/col-12-->
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer contains team links -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <ul class="list-inline btn-group">
+              <li><a href="https://www.twitch.tv/teamtalima/" target="_blank"><i class="fab fa-twitch fa-3x"></i></a></li>
+              <li><a href="https://twitter.com/TalimaVale" target="_blank"><i class="fab fa-twitter fa-3x"></i></a></li>
+              <li><a href="https://www.instagram.com/talimavale/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></li>
+              <li><a href="https://discord.gg/dGFQ5tE" target="_blank"><i class="fab fa-discord fa-3x"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-sm-4">
+              <p class="text-center">Built with <i class="fas fa-heart"></i> by <a href="https://discord.gg/dGFQ5tE" target="_blank">teamTALIMA</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Links to our js, from /src/public and /node_modules (paths set in srcServer.js) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
