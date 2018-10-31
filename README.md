@@ -27,21 +27,21 @@ Next version will include React.js. Pull updates from Master branch. Enjoy! Good
 **test** - Run all application tests (stored in 'test' folder)  
 
 ## Desired Improvements:
--Add MongoDB installation setup info
--Create Header and Footer .ejs templates
--Add support for React.js
--Move Mongo client into seperate script (only one connection)
--Upon adding Goodreads' books to database, retrieve and store book image
--Linting occasionally outputs twice in console
--Add bundling (webpack) back into environment
--Add sourcemaps into environment
--Can we remove the IIFE from adminRoutes.js
--Research Fetch (polyfill required for Node.js) and Axios, choose one and remove other
--Research Parcel Bundler as a Webpack standin/replacement
--Add a 'Build' and/or 'Deploy' npm script
--Research localTunnel, test, rewrite share npm script
--Ensure test npm script runs all tests
--bookListView and bookView views 'more' buttons links to '/'
+-Add MongoDB installation setup info  
+-Create Header and Footer .ejs templates  
+-Add support for React.js  
+-Move Mongo client into seperate script (only one connection)  
+-Upon adding Goodreads' books to database, retrieve and store book image  
+-Linting occasionally outputs twice in console  
+-Add bundling (webpack) back into environment  
+-Add sourcemaps into environment  
+-Can we remove the IIFE from adminRoutes.js  
+-Research Fetch (polyfill required for Node.js) and Axios, choose one and remove other  
+-Research Parcel Bundler as a Webpack standin/replacement  
+-Add a 'Build' and/or 'Deploy' npm script  
+-Research localTunnel, test, rewrite share npm script  
+-Ensure test npm script runs all tests  
+-bookListView and bookView views 'more' buttons links to '/'  
 
 ## JavaScript Project Structure Tips:
 **1)** JS belongs in a .js file  
