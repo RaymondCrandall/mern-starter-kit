@@ -37,6 +37,8 @@ function authController(nav) {
       } catch (err) {
         debug(err);
       }
+
+      client.close();
     }());
   }
 

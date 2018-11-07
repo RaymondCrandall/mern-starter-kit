@@ -1,4 +1,4 @@
-JavaScript Development Environment
+MERN Starter Kit
 ==================================
 
 ## Project Description:
@@ -22,26 +22,26 @@ Next version will include React.js. Pull updates from Master branch. Enjoy! Good
 **Cache Busting** - Bundler (Webpack) *(not active)*  
 **Error Logging** - Track:js recommended (not included, price gate)  
 
+## Installation Instructions:
+1) Install MongoDB on your machine - [Install MongoDB](https://docs.mongodb.com/manual/administration/install-community/)
+2) Run npm command `npm install` to install all dependencies and devDependencies listed in package.json
+3) Run npm command `npm start` to launch the application
+
 ## NPM Scripts: (package.json)
 **start** - Launch the application (entry point: 'build/srcServer.js')  
 **test** - Run all application tests (stored in 'test' folder)  
+**share** - Expose localhost's port 3000, and receive a sharable url to send teammates and friends - [Learn localtunnel](http://localtunnel.github.io/www/)
 
 ## Desired Improvements:
-- Add MongoDB installation setup info  
-- Create Header and Footer .ejs templates  
 - Add support for React.js  
 - Move Mongo client into seperate script (only one connection)  
 - Upon adding Goodreads' books to database, retrieve and store book image  
 - Linting occasionally outputs twice in console  
 - Add bundling (webpack) back into environment  
 - Add sourcemaps into environment  
-- Can we remove the IIFE from adminRoutes.js  
 - Research Fetch (polyfill required for Node.js) and Axios, choose one and remove other  
 - Research Parcel Bundler as a Webpack standin/replacement  
-- Add a 'Build' and/or 'Deploy' npm script  
-- Research localTunnel, test, rewrite share npm script  
-- Ensure test npm script runs all tests  
-- bookListView and bookView views 'more' buttons links to '/'  
+- Add a 'Build' and/or 'Deploy' npm script 
 
 ## JavaScript Project Structure Tips:
 **1)** JS belongs in a .js file  
